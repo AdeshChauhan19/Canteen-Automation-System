@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.SignUp"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Yourself"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+        <EditText
+            android:inputType="textCapSentences"
+            android:id="@+id/signup_name"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:drawablePadding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"/>
+        <EditText
+            android:id="@+id/signup_roll"
+            android:inputType="number"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:drawablePadding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your University Roll No"/>
+        <EditText
+            android:id="@+id/signup_email"
+            android:inputType="textEmailAddress"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:drawablePadding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your University Email Id"
+         />
+        <EditText
+            android:id="@+id/signup_mobile"
+            android:layout_margin="20dp"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:drawablePadding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Mobile Number"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:text="Year"
+                android:layout_marginEnd="15dp"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/signup_year"
+                android:layout_marginEnd="15dp"
+                android:padding="7dp"
+                android:gravity="end"
+                android:textStyle="italic"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/signup_pass"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:drawablePadding="7dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Password"
+            android:drawableStart="@drawable/ic_password"/>
+        <EditText
+            android:id="@+id/signup_conf_pass"
+            android:inputType="textPassword"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:drawablePadding="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Confirm Password"
+            android:drawableStart="@drawable/ic_password"/>
+        <Button
+            android:id="@+id/registration_btn"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </LinearLayout>
+
+</ScrollView>
